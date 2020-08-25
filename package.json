@@ -1,0 +1,24 @@
+{
+  "name": "learn-webpack-5-from-scratch-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertguss/learn-webpack-5-from-scratch-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertguss/learn-webpack-5-from-scratch-course/issues"
+  },
+  "homepage": "https://github.com/robertguss/learn-webpack-5-from-scratch-course#readme",
+  "devDependencies": {
+    "webpack": "^5.0.0-beta.28",
+    "webpack-cli": "^3.3.12"
+  }
+}
