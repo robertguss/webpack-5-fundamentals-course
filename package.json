@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --open",
     "build": "webpack"
   },
   "repository": {
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/robertguss/learn-webpack-5-from-scratch-course#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
     "webpack": "^5.0.0-beta.28",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
