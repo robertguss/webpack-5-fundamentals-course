@@ -1,4 +1,5 @@
+@import './scss/variables';
+
 body {
-  transition: all .5s;
-  font-size: responsive;
+  background: $background;
 }

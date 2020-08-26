@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
   },
@@ -24,9 +25,9 @@ module.exports = {
               hmr: process.env.NODE_ENV === 'development',
             },
           },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
+          { loader: 'css-loader', options: {sourceMap: true }},
+          { loader: 'postcss-loader', options: { sourceMap: true }},
+          { loader: 'sass-loader', options: { sourceMap: true }},
         ],
       },
     ]
