@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.dev.js"
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,12 @@
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "autoprefixer": "^9.8.6",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.2",
     "cssnano": "^4.1.10",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.4.2",
     "mini-css-extract-plugin": "^0.10.0",
     "postcss-loader": "^3.0.0",
     "rucksack-css": "^1.0.2",
