@@ -1,9 +1,7 @@
-import './main.scss';
+import '../scss/main.scss';
 
 const foo = (name) => {
-  console.log(`Hello ${name}`)
-}
+  console.log(`Hello ${name}`);
+};
 
-const array = [1,2,3,4]
-
-foo("Robert");
+foo('Robert');
