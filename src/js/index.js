@@ -1,7 +1,4 @@
+import _ from 'lodash';
 import '../scss/main.scss';
 
-const foo = (name) => {
-  console.log(`Hello ${name}`);
-};
-
-foo('Robert');
+console.log(_.join(['Index', 'module', 'loaded!'], ' '));
