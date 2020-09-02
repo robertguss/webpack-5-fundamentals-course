@@ -1,17 +1,11 @@
-const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const common = require('./webpack.common');
 
-module.exports = {
+module.exports = merge(common, {
   mode: 'production',
-  entry: './src/index.js',
   module: {
     rules: [
-      { 
-        test: /\.js$/, 
-        exclude: /node_modules/, 
-        loader: "babel-loader" 
-      },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
@@ -23,18 +17,11 @@ module.exports = {
           'sass-loader',
         ],
       },
-    ]
+    ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Production',
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
   ],
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-};
+});
